@@ -90,7 +90,7 @@ const HomePage = () => {
       async () => {
         const res = await apiService.get(`/cars?page=${page}`);
         setCars(res.car);
-        setTotalPages(res.data.total);
+        setTotalPages(res.total);
       }
 
       , [page]);
